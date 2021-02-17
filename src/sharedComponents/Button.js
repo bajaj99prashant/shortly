@@ -19,14 +19,14 @@ const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   ${(props) =>
+    props.light === true ? `font-family: ${props.theme.fonts[2]};` : null}
+  ${(props) =>
     props.large === true
       ? `margin-top: 1rem; border-radius: 25px; @media(max-width: 576px){font-size: ${props.theme.fontSizes.paragraph}; margin-top: 0.2rem}`
       : null}
-  &:hover {
-    ${(props) =>
-      props.light === true
-        ? `background: ${props.theme.colors.neutral.veryDarkBlue};`
-        : null}
+  @media(max-width: 576px) {
+    font-size: ${(props) => props.theme.fontSizes.paragraph};
+    padding: 0.2rem 0.5rem;
   }
 `;
 

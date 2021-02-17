@@ -12,6 +12,7 @@ const MainSection = styled.div`
   width: 100%;
   @media (max-width: 576px) {
     flex-direction: column-reverse;
+    text-align: center;
   }
 `;
 
@@ -51,6 +52,12 @@ const RightHeroSection = styled.div`
   }
 `;
 
+const StyledButton = styled(Button)`
+  @media (max-width: 576px) {
+    padding: 0.5rem 2.5rem;
+  }
+`;
+
 const Hero = () => {
   return (
     <Box hero={true}>
@@ -68,9 +75,9 @@ const Hero = () => {
               Build your brands recognition and get detailed insights on how
               your links are performing.
             </Paragraph>
-            <Button light={true} large={true} round={true}>
+            <StyledButton light={true} large={true} round={true}>
               Get Started
-            </Button>
+            </StyledButton>
           </MainContent>
         </LeftHeroSection>
         <RightHeroSection />

@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledInput = styled.input`
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
   border: none;
   border-radius: 8px;
   font-size: ${(props) => props.theme.fontSizes.paragraph};

@@ -13,6 +13,12 @@ const StyledParagraph = styled.p`
       ? `font-size: ${props.theme.fontSizes.link}; color: ${(props) =>
           props.theme.colors.secondary.red};`
       : null}
+  ${(props) =>
+    props.body === true
+      ? `font-size: ${props.theme.fontSizes.largeButton}; font-family: ${(
+          props
+        ) => props.theme.fonts[2]};`
+      : null}
 `;
 
 const Paragraph = (props) => {

@@ -7,7 +7,11 @@ const StyledDiv = styled.div`
   color: #fff;
   ${(props) =>
     props.hero === true
-      ? `min-height: 100vh; background: #fff; color: #000;`
+      ? `min-height: 110vh; background: #fff; color: #000;
+        @media(max-width: 576px){
+          min-height: 115vh;
+        }
+      `
       : null}
   ${(props) =>
     props.shorten === true
@@ -15,7 +19,7 @@ const StyledDiv = styled.div`
       : props.boost === true
       ? `background-image: url('img/desktop-boost.svg'); background-size: cover; background-color: ${props.theme.colors.primary.darkViolet};`
       : props.body === true
-      ? `background: ${props.theme.colors.neutral.gray}; color: ${props.theme.colors.primary.darkViolet}; min-height: 70vh;`
+      ? `background: #eaeaea; color: ${props.theme.colors.primary.darkViolet}; min-height: 70vh;`
       : null}
   ${(props) =>
     props.footer === true
