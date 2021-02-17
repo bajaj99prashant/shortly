@@ -19,7 +19,7 @@ const theme = {
     paragraph: "1rem",
     largeHeading: "4rem",
     link: "0.8rem",
-    heading: "2rem",
+    heading: "2.2rem",
     smallHeading: "1.8rem",
     largeButton: "1.2rem",
   },

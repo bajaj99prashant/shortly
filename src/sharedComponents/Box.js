@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
       : props.boost === true
       ? `background-image: url('img/desktop-boost.svg'); background-size: cover; background-color: ${props.theme.colors.primary.darkViolet};`
       : props.body === true
-      ? `background: #eaeaea; color: ${props.theme.colors.primary.darkViolet}; min-height: 70vh;`
+      ? `background: #eaeaea; color: ${props.theme.colors.primary.darkViolet}; min-height: 110vh; @media(max-width: 768px){min-height: 140vh;} @media(max-width: 576px){min-height: 150vh;}`
       : null}
   ${(props) =>
     props.footer === true
