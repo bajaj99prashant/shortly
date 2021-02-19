@@ -6,6 +6,7 @@ import IconCollection from "../sharedComponents/IconCollection";
 import List from "../sharedComponents/List";
 
 const StyledFlex = styled.div`
+  padding: 1rem auto;
   display: flex;
   justify-content: space-between;
   @media (max-width: 576px) {
@@ -16,6 +17,10 @@ const StyledFlex = styled.div`
 const StyledImg = styled.img`
   height: 40px;
   margin-top: 1.5rem;
+  @media (max-width: 576px) {
+    width: 150px;
+    height: auto;
+  }
 `;
 
 const Footer = () => {
